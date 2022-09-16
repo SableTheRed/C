@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  int x;
+  printf("Test 1: Take an integer value and determine if it's equal to 2:\n\n");
+  printf("Enter an integer to define X\n");
+  scanf("%d",&x);
+  if (x==2)
+    printf("X is equal to two!\n");
+  else
+    printf("X is not equal to two! It's actually %d!\n", x);
+  return 0;
+}
