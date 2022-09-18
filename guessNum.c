@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int guess(x) {
+int guess(int x) {
     
     printf("guess a number between 1 and 100\n");
     int inpt;
