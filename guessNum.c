@@ -28,7 +28,8 @@ int main() {
     int x;
     // x = random number (1-100)
     srand(time(NULL));
-    x = rand() % 101;
+    x = rand() % 100;
+    x = x + 1;
     int count = 0;
     int guessed;
     guessed = 1;
