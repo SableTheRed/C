@@ -5,19 +5,20 @@ int guess(x) {
     
     printf("guess a number between 1 and 100\n");
     int inpt;
-    scanf("%d", &inpt)
-
-    if (inpt>x)
+    scanf("%d", &inpt);
+    
+    if (inpt>x){
         printf("Your guess is too high!\n");
         return 1;
-    else-if (inpt < x)
+      }
+    else if (inpt < x){
         printf("Your guess is too low!\n");
         return 1;
-
-    
-    else
+      }
+    else{
         printf("Correct! The number was %d\n", x);
         return 0;
+      }
 
 }
 
@@ -34,6 +35,6 @@ int main() {
         guessed = guess(x);
         count = (count + 1);
     }
-    printf("This took you %d guesses", &count);
+    printf("This took you %d guesses", count);
     return 0;
 }
