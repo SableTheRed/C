@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 
 int guess(x) {
     
@@ -26,7 +27,8 @@ int guess(x) {
 int main() {
     int x;
     // x = random number (1-100)
-    x = 16;
+    srand(time(NULL));
+    x = rand() % 101;
     int count = 0;
     int guessed;
     guessed = 1;
